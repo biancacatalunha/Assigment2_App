@@ -4,5 +4,4 @@
     <string name="textViewMessage2">Implicit Intent: View Picture</string>
     <string name="textViewMessage3">Explicit Intent: Call an activity</string>
     <string name="buttonText">SEND</string>
-    <string name="title_activity_compose_email">ComposeEmailActivity</string>
 </resources>
