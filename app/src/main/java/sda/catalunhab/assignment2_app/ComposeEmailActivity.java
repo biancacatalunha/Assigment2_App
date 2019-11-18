@@ -9,11 +9,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import sda.catalunhab.assignment2_app.types.Email;
+
 public class ComposeEmailActivity extends AppCompatActivity {
 
-    static final String TO = "sda.catalunhab.assignment2_app.TO";
-    static final String SUBJECT = "sda.catalunhab.assignment2_app.SUBJECT";
-    static final String CONTENT = "sda.catalunhab.assignment2_app.CONTENT";
+    static final String EMAIL = "sda.catalunhab.assignment2_app.EMAIL";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,10 +29,9 @@ public class ComposeEmailActivity extends AppCompatActivity {
                 EditText et2 = findViewById(R.id.editText2);
                 EditText et3 = findViewById(R.id.editText3);
 
-                result.putExtra(TO, et.getText().toString());
-                result.putExtra(SUBJECT, et2.getText().toString());
-                result.putExtra(CONTENT, et3.getText().toString());
+                Email email = new Email(et.getText().toString(), et2.getText().toString(), et3.getText().toString());
 
+                result.putExtra(EMAIL, email);
                 setResult(Activity.RESULT_OK, result);
                 finish();
             }
