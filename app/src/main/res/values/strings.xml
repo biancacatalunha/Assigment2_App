@@ -1,7 +1,11 @@
 <resources>
-    <string name="app_name">SDA Assign02-2019 Bianca Catalunha</string>
+    <string name="app_name">SDA Assign02–2019 Bianca Catalunha</string>
     <string name="textViewMessage1">Implicit Intent: Open Camera</string>
     <string name="textViewMessage2">Implicit Intent: View Picture</string>
     <string name="textViewMessage3">Explicit Intent: Call an activity</string>
     <string name="buttonText">SEND</string>
+    <string name="editTextMessage1">To: </string>
+    <string name="editTextMessage2">Subject: </string>
+    <string name="editTextMessage3">Content: </string>
+    <string name="buttonText2">SAVE</string>
 </resources>
