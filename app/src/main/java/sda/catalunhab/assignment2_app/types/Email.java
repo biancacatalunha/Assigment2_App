@@ -5,11 +5,23 @@ import android.os.Parcelable;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
+
+/**
+ * DCU - SDA - Assignment 2
+ *
+ * Object to represent an email
+ * It implements Parcelable to be able to serialize the data in order to share
+ * the object between activities
+ *
+ * Lombok library is used to generate setters and getters
+ *
+ * @author Bianca Catalunha
+ * @since November 2019
+ */
+
 
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
 public class Email implements Parcelable {
 
     private String to;
@@ -46,10 +58,6 @@ public class Email implements Parcelable {
         dest.writeString(to);
         dest.writeString(subject);
         dest.writeString(content);
-    }
-
-    public static Creator<Email> getCREATOR() {
-        return CREATOR;
     }
 
     @Override
